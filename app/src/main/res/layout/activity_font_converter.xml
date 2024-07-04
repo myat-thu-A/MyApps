@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="#d7f5e6"
+    tools:context=".MainAdapter.SimpleApp.FontConverter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font Converter"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#272928"
+        android:layout_gravity="center"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgFonts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbUni2Zg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unicode to Zawgyi"
+            android:textColor="#272928"
+            android:textStyle="bold"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rbZg2Uni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zawgyi to Unicode"
+            android:textColor="#272928"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Input Text"
+        android:textColor="#272928"
+        android:fontFamily="@font/unicode"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btConvert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Convert"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:backgroundTint="#0c3159"
+            />
+
+        <Button
+            android:id="@+id/btCopy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Copy"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:backgroundTint="#0c3159"
+            />
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:backgroundTint="#0c3159"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etOutput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:editable="false"
+        android:hint="Output Text"
+        android:textColor="#272928"
+        android:textStyle="bold"
+        android:fontFamily="@font/zawgyi"
+        />
+
+</LinearLayout>

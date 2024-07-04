@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#bcf5f5"
+    android:padding="10dp"
+    tools:context=".MainAdapter.Mp3Playlist.PlaySong">
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textColor="#012424"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:textColor="#012424"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/iv_artist"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:max="100"
+        android:progress="0"
+        android:outlineSpotShadowColor="#012424"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/bt_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/prev"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pause"
+            android:backgroundTint="@color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

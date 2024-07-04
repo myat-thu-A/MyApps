@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApps"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainAdapter.TodoApp.AddTodo"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.TodoApp.TodoApp"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.UserDatabase.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.MyNote.EditNote"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.MyNote.MyNote"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.Voucher.ProductAdd"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.Voucher.Voucher"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.Mp3Playlist.PlaySong"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.Mp3Playlist.Mp3Playlist"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.TicTacToe.TicTacToe"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.TicTacToe.tictactoeIntro"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.DateCounter.DateCounter"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.SimpleApp.DiceRoller"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.SimpleApp.Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.SimpleApp.FontConverter"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.SimpleApp.GuessWord"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.AllApp"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

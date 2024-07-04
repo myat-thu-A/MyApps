@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_product"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/transparent"
+            >
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_fastfood"
+                    android:scaleType="centerCrop"
+                    />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hamburger"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv_product"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : "
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#fa2b20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_price_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity : "
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_price_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#fa2b20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_quantity_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_product_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="#f75a2a"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
